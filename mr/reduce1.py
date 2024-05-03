@@ -4,7 +4,7 @@ palabra = None
 cnt = 1
 
 for linea in sys.stdin:
-	palabra_nueva, contador = linea.split('\t')
+	palabra_nueva, contador = linea.split(' ')
 	if (palabra_nueva == palabra):
 		cnt += 1
 	else:
