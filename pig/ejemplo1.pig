@@ -1,5 +1,5 @@
 -- Leer datos
-datos = LOAD 'texto.txt' USING PigStorage(',') AS (nombre:chararray, edad:int, ciudad:chararray);
+datos = LOAD 'datos.csv' USING PigStorage(',') AS (nombre:chararray, edad:int, ciudad:chararray);
 
 -- Agrupar datos por ciudad
 datos_ciudad = GROUP datos BY  ciudad;
